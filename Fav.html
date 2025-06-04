@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
     <title>قوائم</title>
     <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./css/datatables.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 
@@ -102,7 +103,6 @@
             </div>
         </div>
     </header>
-
     <aside id="sidebar" class="sidebar d-flex flex-column justify-content-between py-4 ps-3">
         <div class="nav flex-column">
             <a class="aside-link my-1" href="#">
@@ -258,228 +258,130 @@
     </aside>
 
     <main id="content" class="content">
-        <section class="index_page">
-            <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
-                <h4 class="page_title main-color">الرئيسية</h4>
-            </div>
-
-            <div class="">
-                <div class="row row-cols-1  row-cols-md-2 row-cols-lg-4">
-                    <div class="col p-2">
-                        <a href="" class="box h-100 d-flex align-items-center justify-content-center flex-column p-4">
-                            <span class="d-block mb-3">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M34.375 28.4375H30.9166V31.8958H34.375M34.375 21.5208H30.9166V24.9792H34.375M37.8333 35.3542H24V31.8958H27.4583V28.4375H24V24.9792H27.4583V21.5208H24V18.0625H37.8333M20.5416 14.6042H17.0833V11.1458H20.5416M20.5416 21.5208H17.0833V18.0625H20.5416M20.5416 28.4375H17.0833V24.9792H20.5416M20.5416 35.3542H17.0833V31.8958H20.5416M13.625 14.6042H10.1666V11.1458H13.625M13.625 21.5208H10.1666V18.0625H13.625M13.625 28.4375H10.1666V24.9792H13.625M13.625 35.3542H10.1666V31.8958H13.625M24 14.6042V7.6875H6.70831V38.8125H41.2916V14.6042H24Z"
-                                        fill="#003A74" />
-                                </svg>
-                            </span>
-                            <h5 class="text-black-50 mb-0"> 16 منشأة</h5>
-                        </a>
-                    </div>
-                    <div class="col p-2">
-                        <a href="" class="box h-100 d-flex align-items-center justify-content-center flex-column p-4">
-                            <span class="d-block mb-3">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_714_22)">
-                                        <path
-                                            d="M29.1875 21.5208C31.0219 21.5208 32.7812 20.7921 34.0783 19.495C35.3754 18.1979 36.1041 16.4386 36.1041 14.6042C36.1041 12.7698 35.3754 11.0105 34.0783 9.71334C32.7812 8.41622 31.0219 7.6875 29.1875 7.6875M32.6458 26.7083C34.9388 26.7083 37.1379 27.6192 38.7593 29.2406C40.3807 30.862 41.2916 33.0611 41.2916 35.3542C41.2916 36.2714 40.9273 37.151 40.2787 37.7996C39.6302 38.4481 38.7505 38.8125 37.8333 38.8125H35.2396M25.7291 14.6042C25.7291 16.4386 25.0004 18.1979 23.7033 19.495C22.4062 20.7921 20.6469 21.5208 18.8125 21.5208C16.9781 21.5208 15.2188 20.7921 13.9217 19.495C12.6245 18.1979 11.8958 16.4386 11.8958 14.6042C11.8958 12.7698 12.6245 11.0105 13.9217 9.71334C15.2188 8.41622 16.9781 7.6875 18.8125 7.6875C20.6469 7.6875 22.4062 8.41622 23.7033 9.71334C25.0004 11.0105 25.7291 12.7698 25.7291 14.6042ZM22.2708 26.7083H15.3541C13.0611 26.7083 10.862 27.6192 9.24062 29.2406C7.61921 30.862 6.70831 33.0611 6.70831 35.3542C6.70831 36.2714 7.07267 37.151 7.72124 37.7996C8.3698 38.4481 9.24944 38.8125 10.1666 38.8125H27.4583C28.3755 38.8125 29.2552 38.4481 29.9037 37.7996C30.5523 37.151 30.9166 36.2714 30.9166 35.3542C30.9166 33.0611 30.0057 30.862 28.3843 29.2406C26.7629 27.6192 24.5638 26.7083 22.2708 26.7083Z"
-                                            stroke="#003A74" stroke-width="2.59375" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_714_22">
-                                            <rect width="48" height="48" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <h5 class="text-black-50 mb-0"> 24 محاسب</h5>
-                        </a>
-                    </div>
-                    <div class="col p-2">
-                        <a href="" class="box h-100 d-flex align-items-center justify-content-center flex-column p-4">
-                            <span class="d-block mb-3">
-                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M33.3333 8.33203V11.6654M24.9999 8.33203V11.6654M16.6666 8.33203V11.6654M27.4999 31.6654H33.3333M27.4999 19.9987H33.3333M10.8333 21.6654C10.8333 16.1654 10.8333 13.4154 12.5416 11.707C14.2499 9.9987 16.9999 9.9987 22.4999 9.9987H27.4999C33 9.9987 35.75 9.9987 37.4583 11.707C39.1666 13.4154 39.1666 16.1654 39.1666 21.6654V29.9987C39.1666 35.4987 39.1666 38.2487 37.4583 39.957C35.75 41.6654 33 41.6654 27.4999 41.6654H22.4999C16.9999 41.6654 14.2499 41.6654 12.5416 39.957C10.8333 38.2487 10.8333 35.4987 10.8333 29.9987V21.6654Z"
-                                        stroke="#003A74" stroke-width="2.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M16.6666 21.6654C16.6666 21.6654 17.5 21.6654 18.3333 23.332C18.3333 23.332 20.98 19.1654 23.3333 18.332M16.6666 33.332C16.6666 33.332 17.5 33.332 18.3333 34.9987C18.3333 34.9987 20.98 30.832 23.3333 29.9987"
-                                        stroke="#003A74" stroke-width="2.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <h5 class="text-black-50 mb-0"> 8 مهام</h5>
-                        </a>
-                    </div>
-                    <div class="col p-2">
-                        <a href="" class="box h-100 d-flex align-items-center justify-content-center flex-column p-4">
-                            <span class="d-block mb-3">
-                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_714_7)">
-                                        <path
-                                            d="M23.1891 29.1125L20.334 26.2574L18.7797 27.8117L23.1891 32.2211L32.0078 23.4023L30.4535 21.848L23.1891 29.1125ZM8.85859 17.8906H16.575V20.0953H8.85859V17.8906ZM8.85859 12.3789H22.0867V14.5836H8.85859V12.3789ZM8.85859 6.86719H22.0867V9.07188H8.85859V6.86719Z"
-                                            fill="#003A74" />
-                                        <path
-                                            d="M16.575 32.2211H5.55156C4.33568 32.2211 3.34688 31.2323 3.34688 30.0164V3.56016C3.34688 2.34427 4.33568 1.35547 5.55156 1.35547H25.3937C26.6096 1.35547 27.5984 2.34427 27.5984 3.56016V20.0953H25.3937V3.56016H5.55156V30.0164H16.575V32.2211Z"
-                                            fill="#003A74" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_714_7">
-                                            <rect width="34" height="34" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <h5 class="text-black-50 mb-0"> 40 إجمالي الإستشارات</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="my-4">
-                <h4 class="page_title text-black-50 p-3 mb-0">المنشآت</h4>
-                <div class="table-responsive p-2">
-                    <table class="table custom_table main-table">
-                        <thead>
-                            <tr>
-                                <th class="text-start px-3">إسم المنشأة</th>
-                                <th class="text-start"></th>
-                            </tr>
-                        </thead>
-                        <tbody class="px-2">
-                            <tr>
-                                <td>
-                                    <div class="account-lable d-flex align-items-center">
-                                        <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                        <p class="mb-0 me-3 text-decoration-underline">المنشأة الأولى</p>
-                                    </div>
-                                </td>
-                                <td class=""><a href="" class="main-btn mx-auto main-control">لوحة التحكم الحالية</a> </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="account-lable d-flex align-items-center">
-                                        <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                        <p class="mb-0 me-3 text-decoration-underline">المنشأة الأولى</p>
-                                    </div>
-                                </td>
-                                <td class=""><a href="" class="main-btn mx-auto">ذهاب للوحة التحكم</a> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-
-            <div class="my-4">
-                <div class="box index_chats">
-                    <h4 class="page_title text-black-50 p-3">المحادثة</h4>
-                    <div class="p-3 all_index_chats">
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
+        <section class="archive_page">
+            <nav aria-label="breadcrumb mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item   fs-4 page_title main-color" aria-current="page"> المفضلة</li>
+                </ol>
+            </nav>
         </section>
+
+        <div class="table-responsive p-2">
+            <table class="table custom_table main-table" id="myDataTable">
+                <thead>
+                    <tr>
+                        <th></th> <!-- Empty header for checkbox column -->
+                        <th class="text-start">إسم الملف</th>
+                        <th class="text-start"></th>
+                    </tr>
+                </thead>
+                <tbody class="px-2">
+                    <tr>
+                        <td></td> <!-- Checkbox will be inserted here by DataTables -->
+                        <td>
+                            الملف الأول.PDF
+                        </td>
+                        <td>
+                            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2477 20.001L10.3004 19.1449C8.26084 17.2819 6.57368 15.6873 5.23895 14.3609C3.90505 13.0336 2.85193 11.863 2.07959 10.8491C1.30724 9.8351 0.767349 8.91862 0.459911 8.09962C0.152473 7.28062 -0.000829788 6.45537 3.3777e-06 5.62387C3.3777e-06 4.03419 0.539895 2.69946 1.61968 1.61967C2.69946 0.539891 4.03419 0 5.62387 0C6.72365 0 7.75469 0.281193 8.717 0.84358C9.67931 1.40597 10.5229 2.22414 11.2477 3.29809C11.9726 2.22414 12.8162 1.40597 13.7785 0.84358C14.7408 0.281193 15.7718 0 16.8716 0C18.4613 0 19.796 0.539891 20.8758 1.61967C21.9556 2.69946 22.4955 4.03419 22.4955 5.62387C22.4955 6.4537 22.3422 7.27854 22.0356 8.09837C21.7281 8.91987 21.1882 9.83719 20.4159 10.8503C19.6436 11.8634 18.5942 13.0336 17.2678 14.3609C15.9414 15.6873 14.2501 17.2819 12.1938 19.1449L11.2477 20.001Z" fill="#003A74"/>
+                                </svg>                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td> <!-- Checkbox will be inserted here by DataTables -->
+                        <td>
+                            الملف الأول.PDF
+                        </td>
+                        <td>
+                            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2477 20.001L10.3004 19.1449C8.26084 17.2819 6.57368 15.6873 5.23895 14.3609C3.90505 13.0336 2.85193 11.863 2.07959 10.8491C1.30724 9.8351 0.767349 8.91862 0.459911 8.09962C0.152473 7.28062 -0.000829788 6.45537 3.3777e-06 5.62387C3.3777e-06 4.03419 0.539895 2.69946 1.61968 1.61967C2.69946 0.539891 4.03419 0 5.62387 0C6.72365 0 7.75469 0.281193 8.717 0.84358C9.67931 1.40597 10.5229 2.22414 11.2477 3.29809C11.9726 2.22414 12.8162 1.40597 13.7785 0.84358C14.7408 0.281193 15.7718 0 16.8716 0C18.4613 0 19.796 0.539891 20.8758 1.61967C21.9556 2.69946 22.4955 4.03419 22.4955 5.62387C22.4955 6.4537 22.3422 7.27854 22.0356 8.09837C21.7281 8.91987 21.1882 9.83719 20.4159 10.8503C19.6436 11.8634 18.5942 13.0336 17.2678 14.3609C15.9414 15.6873 14.2501 17.2819 12.1938 19.1449L11.2477 20.001Z" fill="#003A74"/>
+                                </svg>                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td> <!-- Checkbox will be inserted here by DataTables -->
+                        <td>
+                            الملف الأول.PDF
+                        </td>
+                        <td>
+                            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2477 20.001L10.3004 19.1449C8.26084 17.2819 6.57368 15.6873 5.23895 14.3609C3.90505 13.0336 2.85193 11.863 2.07959 10.8491C1.30724 9.8351 0.767349 8.91862 0.459911 8.09962C0.152473 7.28062 -0.000829788 6.45537 3.3777e-06 5.62387C3.3777e-06 4.03419 0.539895 2.69946 1.61968 1.61967C2.69946 0.539891 4.03419 0 5.62387 0C6.72365 0 7.75469 0.281193 8.717 0.84358C9.67931 1.40597 10.5229 2.22414 11.2477 3.29809C11.9726 2.22414 12.8162 1.40597 13.7785 0.84358C14.7408 0.281193 15.7718 0 16.8716 0C18.4613 0 19.796 0.539891 20.8758 1.61967C21.9556 2.69946 22.4955 4.03419 22.4955 5.62387C22.4955 6.4537 22.3422 7.27854 22.0356 8.09837C21.7281 8.91987 21.1882 9.83719 20.4159 10.8503C19.6436 11.8634 18.5942 13.0336 17.2678 14.3609C15.9414 15.6873 14.2501 17.2819 12.1938 19.1449L11.2477 20.001Z" fill="#003A74"/>
+                                </svg>                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td> <!-- Checkbox will be inserted here by DataTables -->
+                        <td>
+                            الملف الأول.PDF
+                        </td>
+                        <td>
+                            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2477 20.001L10.3004 19.1449C8.26084 17.2819 6.57368 15.6873 5.23895 14.3609C3.90505 13.0336 2.85193 11.863 2.07959 10.8491C1.30724 9.8351 0.767349 8.91862 0.459911 8.09962C0.152473 7.28062 -0.000829788 6.45537 3.3777e-06 5.62387C3.3777e-06 4.03419 0.539895 2.69946 1.61968 1.61967C2.69946 0.539891 4.03419 0 5.62387 0C6.72365 0 7.75469 0.281193 8.717 0.84358C9.67931 1.40597 10.5229 2.22414 11.2477 3.29809C11.9726 2.22414 12.8162 1.40597 13.7785 0.84358C14.7408 0.281193 15.7718 0 16.8716 0C18.4613 0 19.796 0.539891 20.8758 1.61967C21.9556 2.69946 22.4955 4.03419 22.4955 5.62387C22.4955 6.4537 22.3422 7.27854 22.0356 8.09837C21.7281 8.91987 21.1882 9.83719 20.4159 10.8503C19.6436 11.8634 18.5942 13.0336 17.2678 14.3609C15.9414 15.6873 14.2501 17.2819 12.1938 19.1449L11.2477 20.001Z" fill="#003A74"/>
+                                </svg>                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td> <!-- Checkbox will be inserted here by DataTables -->
+                        <td>
+                            الملف الأول.PDF
+                        </td>
+                        <td>
+                            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2477 20.001L10.3004 19.1449C8.26084 17.2819 6.57368 15.6873 5.23895 14.3609C3.90505 13.0336 2.85193 11.863 2.07959 10.8491C1.30724 9.8351 0.767349 8.91862 0.459911 8.09962C0.152473 7.28062 -0.000829788 6.45537 3.3777e-06 5.62387C3.3777e-06 4.03419 0.539895 2.69946 1.61968 1.61967C2.69946 0.539891 4.03419 0 5.62387 0C6.72365 0 7.75469 0.281193 8.717 0.84358C9.67931 1.40597 10.5229 2.22414 11.2477 3.29809C11.9726 2.22414 12.8162 1.40597 13.7785 0.84358C14.7408 0.281193 15.7718 0 16.8716 0C18.4613 0 19.796 0.539891 20.8758 1.61967C21.9556 2.69946 22.4955 4.03419 22.4955 5.62387C22.4955 6.4537 22.3422 7.27854 22.0356 8.09837C21.7281 8.91987 21.1882 9.83719 20.4159 10.8503C19.6436 11.8634 18.5942 13.0336 17.2678 14.3609C15.9414 15.6873 14.2501 17.2819 12.1938 19.1449L11.2477 20.001Z" fill="#003A74"/>
+                                </svg>                                
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
     </main>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end pb-1">
+                    <button type="button" class="closeBtn" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 2C8.2 2 2 8.2 2 16C2 23.8 8.2 30 16 30C23.8 30 30 23.8 30 16C30 8.2 23.8 2 16 2ZM21.4 23L16 17.6L10.6 23L9 21.4L14.4 16L9 10.6L10.6 9L16 14.4L21.4 9L23 10.6L17.6 16L23 21.4L21.4 23Z"
+                                fill="#003A74" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4 class="main-color fw-bold ">إنشاء مجلد</h4>
+                    <div class="mb-4">
+                        <div class="input-group flex-nowrap inputform">
+                            <span class="input-group-text">
+                                <svg width="27" height="23" viewBox="0 0 27 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.796133 5.26929L0.727485 3.77618C0.727485 2.86584 1.08912 1.99279 1.73282 1.34909C2.37653 0.70538 3.24958 0.34375 4.15992 0.34375H10.4619C11.3721 0.343944 12.245 0.705702 12.8886 1.34945L14.3096 2.77048C14.9532 3.41423 15.8261 3.77599 16.7363 3.77618H23.5703C24.0473 3.77613 24.519 3.87549 24.9555 4.06792C25.3919 4.26035 25.7834 4.54163 26.1051 4.89382C26.4268 5.246 26.6715 5.66136 26.8237 6.1134C26.9759 6.56544 27.0322 7.04423 26.989 7.51925L25.8958 19.5328C25.8183 20.3856 25.4248 21.1786 24.7926 21.7562C24.1604 22.3338 23.3351 22.6542 22.4788 22.6546H4.7194C3.86308 22.6542 3.0378 22.3338 2.4056 21.7562C1.77339 21.1786 1.37991 20.3856 1.30242 19.5328L0.209188 7.51925C0.137513 6.72439 0.345061 5.92939 0.796133 5.27101V5.26929ZM3.62789 5.4924C3.38948 5.49238 3.15369 5.54204 2.93554 5.6382C2.71738 5.73437 2.52166 5.87493 2.36084 6.05093C2.20002 6.22692 2.07764 6.43449 2.00148 6.66041C1.92533 6.88633 1.89708 7.12563 1.91854 7.36307L3.01177 19.3766C3.0503 19.803 3.24683 20.1996 3.56277 20.4886C3.87871 20.7775 4.29125 20.9379 4.7194 20.9383H22.4788C22.907 20.9379 23.3195 20.7775 23.6354 20.4886C23.9514 20.1996 24.1479 19.803 24.1864 19.3766L25.2797 7.36307C25.3011 7.12563 25.2729 6.88633 25.1967 6.66041C25.1206 6.43449 24.9982 6.22692 24.8374 6.05093C24.6765 5.87493 24.4808 5.73437 24.2627 5.6382C24.0445 5.54204 23.8087 5.49238 23.5703 5.4924H3.62789ZM11.6769 2.56282C11.5174 2.40324 11.328 2.27668 11.1195 2.1904C10.911 2.10411 10.6875 2.05979 10.4619 2.05997H4.15992C3.71034 2.05988 3.27869 2.23622 2.95775 2.55105C2.63682 2.86588 2.45224 3.29408 2.4437 3.74357L2.454 3.98213C2.82356 3.84597 3.21485 3.77733 3.62789 3.77618H12.8886L11.6769 2.56282Z"
+                                        fill="#003A74" />
+                                </svg>
+                            </span>
+                            <input type="text" class="form-control text-start" placeholder=" إسم المجاد">
+                        </div>
+                    </div>
+                    <div class="text-center pb-3">
+                        <button class="main-btn mx-auto mb-3">إنشاء</button>
+                        <button class="second-btn mx-auto">إلغاء</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/datatables.min.js"></script>
+    <script src="./js/datatablescript.js"></script>
     <script src="./js/index.js"></script>
-
-
 
 </body>
 

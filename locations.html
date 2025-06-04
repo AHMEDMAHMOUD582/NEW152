@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ostool</title>
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+
+  <section class="location-select">
+    <div class="container py-5">
+      <div class="text-center">
+        <img src="./assets/logo.png" class="img-fluid" alt="">
+      </div>
+      <h1 class="mb-0 text-decoration-underline main-color fs-1 fw-bold mb-3">تحديد موقع</h1>
+      <div class="location-select-con my-4">
+        <iframe class="w-100"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59440.30311919612!2d39.89293126061152!3d21.389158686109784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2z2YXZg9ipINin2YTZhdmD2LHZhdipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1680128233895!5m2!1sar!2seg"
+          style="border:0; height:400px" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <h2 class="fw-bold text-black-50">البحث عن موقع </h1>
+        <div class="input-group input-group-custom flex-nowrap my-4">
+          <span class="input-group-text"><svg width="30" height="30" viewBox="0 0 46 45" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M27.5043 29.0365C25.0047 31.0337 21.8353 31.998 18.647 31.7314C15.4586 31.4647 12.4934 29.9873 10.3603 27.6027C8.22725 25.218 7.08823 22.1071 7.17721 18.9089C7.26619 15.7107 8.57641 12.6679 10.8388 10.4055C13.1011 8.14318 16.1439 6.83296 19.3421 6.74398C22.5404 6.655 25.6513 7.79402 28.0359 9.92711C30.4206 12.0602 31.8979 15.0254 32.1646 18.2137C32.4313 21.4021 31.467 24.5715 29.4698 27.071L39.0302 36.6296C39.1668 36.7569 39.2764 36.9104 39.3524 37.081C39.4284 37.2516 39.4693 37.4358 39.4726 37.6225C39.4759 37.8092 39.4415 37.9947 39.3716 38.1679C39.3016 38.341 39.1975 38.4983 39.0655 38.6304C38.9334 38.7624 38.7761 38.8665 38.6029 38.9365C38.4298 39.0064 38.2443 39.0408 38.0576 39.0375C37.8708 39.0342 37.6867 38.9933 37.5161 38.9173C37.3455 38.8413 37.192 38.7317 37.0647 38.5951L27.5043 29.0365ZM12.8095 26.1402C11.4486 24.7792 10.5217 23.0452 10.146 21.1575C9.77021 19.2698 9.9625 17.3131 10.6985 15.5346C11.4345 13.7561 12.6812 12.2358 14.2811 11.1657C15.8809 10.0956 17.7621 9.52372 19.6868 9.52243C21.6115 9.52113 23.4935 10.0904 25.0947 11.1584C26.696 12.2264 27.9448 13.745 28.6832 15.5225C29.4216 17.3 29.6165 19.2564 29.2433 21.1446C28.8701 23.0329 27.9455 24.7681 26.5864 26.131L26.5772 26.1402L26.5679 26.1476C24.7417 27.9696 22.2669 28.9923 19.6872 28.9909C17.1075 28.9895 14.6338 27.9642 12.8095 26.1402Z"
+                fill="#DADADA" />
+            </svg>
+          </span>
+          <input type="text" class="form-control text-start ps-0" placeholder="ابحث عن موقع ...">
+        </div>
+
+        <div class="form-check p-0 m-0 my-4 location-radio">
+          <input class="form-check-input" hidden type="radio" name="location" id="location1">
+          <label class="form-check-label" for="location1">
+            <p class="mb-4">
+              <span class="me-3">
+                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_854_205)">
+                    <path
+                      d="M3.14258 17V26C3.14258 26.2652 3.24793 26.5196 3.43547 26.7071C3.62301 26.8946 3.87736 27 4.14258 27H24.1426C24.4078 27 24.6621 26.8946 24.8497 26.7071C25.0372 26.5196 25.1426 26.2652 25.1426 26V17M16.1426 17V27M3.14258 20H16.1426M1.14258 8L4.14258 1H24.1426L27.1426 8H1.14258ZM1.14258 8V10C1.14258 11.0609 1.56401 12.0783 2.31415 12.8284C3.0643 13.5786 4.08171 14 5.14258 14H5.70258C6.76344 14 7.78086 13.5786 8.531 12.8284C9.28115 12.0783 9.70258 11.0609 9.70258 10V8"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M18.6426 8V10M18.6426 10C18.6426 11.0609 18.2211 12.0783 17.471 12.8284C16.7209 13.5786 15.7034 14 14.6426 14H13.6426C12.5817 14 11.5643 13.5786 10.8142 12.8284C10.064 12.0783 9.64258 11.0609 9.64258 10V8M18.6426 10C18.6426 11.0609 19.064 12.0783 19.8142 12.8284C20.5643 13.5786 21.5817 14 22.6426 14H23.1426C24.2034 14 25.2209 13.5786 25.971 12.8284C26.7211 12.0783 27.1426 11.0609 27.1426 10V8"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_854_205">
+                      <rect width="28" height="28" fill="white" transform="translate(0.142578)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              المتجر الأول
+            </p>
+            <p class="mb-0">
+              <span class="me-3">
+                <svg width="23" height="32" viewBox="0 0 23 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.5711 0C5.26186 0 0.142578 4.60786 0.142578 10.2857C0.142578 19.4286 11.5711 32 11.5711 32C11.5711 32 22.9997 19.4286 22.9997 10.2857C22.9997 4.60786 17.8804 0 11.5711 0ZM11.5711 16C10.667 16 9.78317 15.7319 9.0314 15.2296C8.27963 14.7273 7.6937 14.0133 7.3477 13.178C7.0017 12.3427 6.91117 11.4235 7.08756 10.5367C7.26395 9.64996 7.69934 8.83541 8.33866 8.19608C8.97799 7.55676 9.79254 7.12137 10.6793 6.94498C11.5661 6.76859 12.4852 6.85912 13.3206 7.20512C14.1559 7.55112 14.8698 8.13706 15.3722 8.88882C15.8745 9.64059 16.1426 10.5244 16.1426 11.4286C16.1413 12.6406 15.6592 13.8026 14.8022 14.6596C13.9452 15.5166 12.7832 15.9987 11.5711 16Z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+              زون 2
+            </p>
+          </label>
+        </div>
+        <div class="form-check p-0 m-0 my-4 location-radio">
+          <input class="form-check-input" hidden type="radio" name="location" id="location2">
+          <label class="form-check-label" for="location2">
+            <p class="mb-4">
+              <span class="me-3">
+                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_854_205)">
+                    <path
+                      d="M3.14258 17V26C3.14258 26.2652 3.24793 26.5196 3.43547 26.7071C3.62301 26.8946 3.87736 27 4.14258 27H24.1426C24.4078 27 24.6621 26.8946 24.8497 26.7071C25.0372 26.5196 25.1426 26.2652 25.1426 26V17M16.1426 17V27M3.14258 20H16.1426M1.14258 8L4.14258 1H24.1426L27.1426 8H1.14258ZM1.14258 8V10C1.14258 11.0609 1.56401 12.0783 2.31415 12.8284C3.0643 13.5786 4.08171 14 5.14258 14H5.70258C6.76344 14 7.78086 13.5786 8.531 12.8284C9.28115 12.0783 9.70258 11.0609 9.70258 10V8"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M18.6426 8V10M18.6426 10C18.6426 11.0609 18.2211 12.0783 17.471 12.8284C16.7209 13.5786 15.7034 14 14.6426 14H13.6426C12.5817 14 11.5643 13.5786 10.8142 12.8284C10.064 12.0783 9.64258 11.0609 9.64258 10V8M18.6426 10C18.6426 11.0609 19.064 12.0783 19.8142 12.8284C20.5643 13.5786 21.5817 14 22.6426 14H23.1426C24.2034 14 25.2209 13.5786 25.971 12.8284C26.7211 12.0783 27.1426 11.0609 27.1426 10V8"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_854_205">
+                      <rect width="28" height="28" fill="white" transform="translate(0.142578)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              المتجر الأول
+            </p>
+            <p class="mb-0">
+              <span class="me-3">
+                <svg width="23" height="32" viewBox="0 0 23 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.5711 0C5.26186 0 0.142578 4.60786 0.142578 10.2857C0.142578 19.4286 11.5711 32 11.5711 32C11.5711 32 22.9997 19.4286 22.9997 10.2857C22.9997 4.60786 17.8804 0 11.5711 0ZM11.5711 16C10.667 16 9.78317 15.7319 9.0314 15.2296C8.27963 14.7273 7.6937 14.0133 7.3477 13.178C7.0017 12.3427 6.91117 11.4235 7.08756 10.5367C7.26395 9.64996 7.69934 8.83541 8.33866 8.19608C8.97799 7.55676 9.79254 7.12137 10.6793 6.94498C11.5661 6.76859 12.4852 6.85912 13.3206 7.20512C14.1559 7.55112 14.8698 8.13706 15.3722 8.88882C15.8745 9.64059 16.1426 10.5244 16.1426 11.4286C16.1413 12.6406 15.6592 13.8026 14.8022 14.6596C13.9452 15.5166 12.7832 15.9987 11.5711 16Z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+              زون 2
+            </p>
+          </label>
+        </div>
+
+        <button class="location-plus mb-4"><svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.1875 14.5H14.5M14.5 14.5H22.8125M14.5 14.5V6.1875M14.5 14.5V22.8125" stroke="white"
+              stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <button class="location-add my-4" data-bs-toggle="modal" data-bs-target="#successModal">إضافة
+        </button>
+    </div>
+  </section>
+
+
+  <!-- Modal -->
+  <div class="modal fade successModal" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-btn" data-bs-dismiss="modal">
+            <svg width="30" height="30" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.9531 2.5C11.2031 2.5 3.45312 10.25 3.45312 20C3.45312 29.75 11.2031 37.5 20.9531 37.5C30.7031 37.5 38.4531 29.75 38.4531 20C38.4531 10.25 30.7031 2.5 20.9531 2.5ZM27.7031 28.75L20.9531 22L14.2031 28.75L12.2031 26.75L18.9531 20L12.2031 13.25L14.2031 11.25L20.9531 18L27.7031 11.25L29.7031 13.25L22.9531 20L29.7031 26.75L27.7031 28.75Z"
+                fill="#DF482B" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="./assets/small-logo.png" class="img-fluid successModal-logo" alt="">
+          <h1 class="main-color fw-bold">تم إرسال الطلب</h1>
+          <h1 class="text-black-50">سيتم التواصل معك في أقرب وقت</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+ </body>
+
+</html>

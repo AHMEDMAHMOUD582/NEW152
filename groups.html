@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
     <title>قوائم</title>
     <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./css/select2.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 
@@ -102,7 +103,6 @@
             </div>
         </div>
     </header>
-
     <aside id="sidebar" class="sidebar d-flex flex-column justify-content-between py-4 ps-3">
         <div class="nav flex-column">
             <a class="aside-link my-1" href="#">
@@ -117,23 +117,16 @@
             </a>
             <a class="aside-link my-1" href="#">
                 <span class="me-2">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
-                            d="M18 15.5H16V17.5H18M18 11.5H16V13.5H18M20 19.5H12V17.5H14V15.5H12V13.5H14V11.5H12V9.5H20M10 7.5H8V5.5H10M10 11.5H8V9.5H10M10 15.5H8V13.5H10M10 19.5H8V17.5H10M6 7.5H4V5.5H6M6 11.5H4V9.5H6M6 15.5H4V13.5H6M6 19.5H4V17.5H6M12 7.5V3.5H2V21.5H22V7.5H12Z"
-                            fill="white" />
+                            d="M15.8125 19.5356L13.9509 17.6741L12.9375 18.6875L15.8125 21.5625L21.5625 15.8125L20.5491 14.7991L15.8125 19.5356ZM6.46875 12.2188H11.5V13.6562H6.46875V12.2188ZM6.46875 8.625H15.0938V10.0625H6.46875V8.625ZM6.46875 5.03125H15.0938V6.46875H6.46875V5.03125Z"
+                            fill="currentColor" />
+                        <path
+                            d="M11.5 21.5625H4.3125C3.51972 21.5625 2.875 20.9178 2.875 20.125V2.875C2.875 2.08222 3.51972 1.4375 4.3125 1.4375H17.25C18.0428 1.4375 18.6875 2.08222 18.6875 2.875V13.6562H17.25V2.875H4.3125V20.125H11.5V21.5625Z"
+                            fill="currentColor" />
                     </svg>
                 </span>
-                المنشآت
-            </a>
-            <a class="aside-link my-1" href="#">
-                <span class="me-2">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15 11.5C16.0609 11.5 17.0783 11.0786 17.8284 10.3284C18.5786 9.57828 19 8.56087 19 7.5C19 6.43913 18.5786 5.42172 17.8284 4.67157C17.0783 3.92143 16.0609 3.5 15 3.5M17 14.5C18.3261 14.5 19.5979 15.0268 20.5355 15.9645C21.4732 16.9021 22 18.1739 22 19.5C22 20.0304 21.7893 20.5391 21.4142 20.9142C21.0391 21.2893 20.5304 21.5 20 21.5H18.5M13 7.5C13 8.56087 12.5786 9.57828 11.8284 10.3284C11.0783 11.0786 10.0609 11.5 9 11.5C7.93913 11.5 6.92172 11.0786 6.17157 10.3284C5.42143 9.57828 5 8.56087 5 7.5C5 6.43913 5.42143 5.42172 6.17157 4.67157C6.92172 3.92143 7.93913 3.5 9 3.5C10.0609 3.5 11.0783 3.92143 11.8284 4.67157C12.5786 5.42172 13 6.43913 13 7.5ZM11 14.5H7C5.67392 14.5 4.40215 15.0268 3.46447 15.9645C2.52678 16.9021 2 18.1739 2 19.5C2 20.0304 2.21071 20.5391 2.58579 20.9142C2.96086 21.2893 3.46957 21.5 4 21.5H14C14.5304 21.5 15.0391 21.2893 15.4142 20.9142C15.7893 20.5391 16 20.0304 16 19.5C16 18.1739 15.4732 16.9021 14.5355 15.9645C13.5979 15.0268 12.3261 14.5 11 14.5Z"
-                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </span>
-                المحاسبين
+                الاستشارات
             </a>
             <a class="aside-link my-1" href="#">
                 <span class="me-2">
@@ -152,19 +145,6 @@
             </a>
             <a class="aside-link my-1" href="#">
                 <span class="me-2">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M16.5 20.885L14.5575 18.9425L13.5 20L16.5 23L22.5 17L21.4425 15.9425L16.5 20.885ZM6.75 13.25H12V14.75H6.75V13.25ZM6.75 9.5H15.75V11H6.75V9.5ZM6.75 5.75H15.75V7.25H6.75V5.75Z"
-                            fill="white" />
-                        <path
-                            d="M12 23H4.5C3.67275 23 3 22.3272 3 21.5V3.5C3 2.67275 3.67275 2 4.5 2H18C18.8273 2 19.5 2.67275 19.5 3.5V14.75H18V3.5H4.5V21.5H12V23Z"
-                            fill="white" />
-                    </svg>
-                </span>
-                الإستشارات
-            </a>
-            <a class="aside-link my-1" href="#">
-                <span class="me-2">
                     <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_203_1925)">
                             <path
@@ -180,7 +160,36 @@
                 </span>
                 المحادثة
             </a>
-
+            <a class="aside-link my-1" href="#">
+                <span class="me-2">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.5 3H14.75V2.25C14.75 1.65326 14.5129 1.08097 14.091 0.65901C13.669 0.237053 13.0967 0 12.5 0H8C7.40326 0 6.83097 0.237053 6.40901 0.65901C5.98705 1.08097 5.75 1.65326 5.75 2.25V3H2C1.60218 3 1.22064 3.15804 0.93934 3.43934C0.658035 3.72064 0.5 4.10218 0.5 4.5V16.5C0.5 16.8978 0.658035 17.2794 0.93934 17.5607C1.22064 17.842 1.60218 18 2 18H18.5C18.8978 18 19.2794 17.842 19.5607 17.5607C19.842 17.2794 20 16.8978 20 16.5V4.5C20 4.10218 19.842 3.72064 19.5607 3.43934C19.2794 3.15804 18.8978 3 18.5 3ZM7.25 2.25C7.25 2.05109 7.32902 1.86032 7.46967 1.71967C7.61032 1.57902 7.80109 1.5 8 1.5H12.5C12.6989 1.5 12.8897 1.57902 13.0303 1.71967C13.171 1.86032 13.25 2.05109 13.25 2.25V3H7.25V2.25ZM18.5 4.5V8.40094C15.9685 9.77885 13.1322 10.5005 10.25 10.5C7.36796 10.5004 4.53169 9.77909 2 8.40188V4.5H18.5ZM18.5 16.5H2V10.0912C4.56869 11.3477 7.3905 12.0005 10.25 12C13.1096 12.0001 15.9313 11.3469 18.5 10.0903V16.5ZM8 8.25C8 8.05109 8.07902 7.86032 8.21967 7.71967C8.36032 7.57902 8.55109 7.5 8.75 7.5H11.75C11.9489 7.5 12.1397 7.57902 12.2803 7.71967C12.421 7.86032 12.5 8.05109 12.5 8.25C12.5 8.44891 12.421 8.63968 12.2803 8.78033C12.1397 8.92098 11.9489 9 11.75 9H8.75C8.55109 9 8.36032 8.92098 8.21967 8.78033C8.07902 8.63968 8 8.44891 8 8.25Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+                البرنامج المحاسبي
+            </a>
+            <a class="aside-link my-1" href="#">
+                <span class="me-2">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.875 15.75C16.875 15.75 18 15.75 18 14.625C18 13.5 16.875 10.125 12.375 10.125C7.875 10.125 6.75 13.5 6.75 14.625C6.75 15.75 7.875 15.75 7.875 15.75H16.875ZM7.89975 14.625L7.875 14.6205C7.87612 14.3235 8.06287 13.4618 8.73 12.6855C9.351 11.9576 10.4423 11.25 12.375 11.25C14.3066 11.25 15.3979 11.9587 16.02 12.6855C16.6871 13.4618 16.8727 14.3246 16.875 14.6205L16.866 14.6228L16.8503 14.625H7.89975ZM12.375 7.875C12.9717 7.875 13.544 7.63795 13.966 7.21599C14.3879 6.79403 14.625 6.22174 14.625 5.625C14.625 5.02826 14.3879 4.45597 13.966 4.03401C13.544 3.61205 12.9717 3.375 12.375 3.375C11.7783 3.375 11.206 3.61205 10.784 4.03401C10.3621 4.45597 10.125 5.02826 10.125 5.625C10.125 6.22174 10.3621 6.79403 10.784 7.21599C11.206 7.63795 11.7783 7.875 12.375 7.875ZM15.75 5.625C15.75 6.06821 15.6627 6.50708 15.4931 6.91656C15.3235 7.32603 15.0749 7.69809 14.7615 8.01149C14.4481 8.32488 14.076 8.57348 13.6666 8.74309C13.2571 8.9127 12.8182 9 12.375 9C11.9318 9 11.4929 8.9127 11.0834 8.74309C10.674 8.57348 10.3019 8.32488 9.98851 8.01149C9.67512 7.69809 9.42652 7.32603 9.25691 6.91656C9.0873 6.50708 9 6.06821 9 5.625C9 4.72989 9.35558 3.87145 9.98851 3.23851C10.6214 2.60558 11.4799 2.25 12.375 2.25C13.2701 2.25 14.1286 2.60558 14.7615 3.23851C15.3944 3.87145 15.75 4.72989 15.75 5.625ZM7.803 10.44C7.35273 10.2993 6.88894 10.2061 6.41925 10.1621C6.15529 10.1364 5.89021 10.124 5.625 10.125C1.125 10.125 0 13.5 0 14.625C0 15.375 0.375 15.75 1.125 15.75H5.868C5.7013 15.3988 5.61813 15.0137 5.625 14.625C5.625 13.4888 6.04913 12.3277 6.85125 11.358C7.12463 11.0272 7.443 10.7179 7.803 10.44ZM5.535 11.25C4.86959 12.2506 4.50995 13.4234 4.5 14.625H1.125C1.125 14.3325 1.3095 13.4663 1.98 12.6855C2.59313 11.97 3.6585 11.2725 5.535 11.2511V11.25ZM1.6875 6.1875C1.6875 5.29239 2.04308 4.43395 2.67601 3.80101C3.30895 3.16808 4.16739 2.8125 5.0625 2.8125C5.95761 2.8125 6.81605 3.16808 7.44899 3.80101C8.08192 4.43395 8.4375 5.29239 8.4375 6.1875C8.4375 7.08261 8.08192 7.94105 7.44899 8.57399C6.81605 9.20692 5.95761 9.5625 5.0625 9.5625C4.16739 9.5625 3.30895 9.20692 2.67601 8.57399C2.04308 7.94105 1.6875 7.08261 1.6875 6.1875ZM5.0625 3.9375C4.46576 3.9375 3.89347 4.17455 3.47151 4.59651C3.04955 5.01847 2.8125 5.59076 2.8125 6.1875C2.8125 6.78424 3.04955 7.35653 3.47151 7.77849C3.89347 8.20045 4.46576 8.4375 5.0625 8.4375C5.65924 8.4375 6.23153 8.20045 6.65349 7.77849C7.07545 7.35653 7.3125 6.78424 7.3125 6.1875C7.3125 5.59076 7.07545 5.01847 6.65349 4.59651C6.23153 4.17455 5.65924 3.9375 5.0625 3.9375Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+                المحاسب القانوني
+            </a>
+            <a class="aside-link my-1" href="#">
+                <span class="me-2">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 15.5V17.3C3 18.42 3 18.98 3.218 19.408C3.40974 19.7843 3.71569 20.0903 4.092 20.282C4.519 20.5 5.079 20.5 6.197 20.5H21M3 15.5V5.5M3 15.5L6.853 12.29L6.857 12.287C7.554 11.706 7.903 11.415 8.282 11.297C8.72913 11.1572 9.21116 11.1788 9.644 11.358C10.011 11.511 10.332 11.832 10.976 12.476L10.982 12.482C11.636 13.136 11.963 13.464 12.336 13.615C12.7774 13.7949 13.2686 13.8112 13.721 13.661C14.104 13.533 14.454 13.227 15.154 12.615L21 7.5"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                التحليلات المالية
+            </a>
             <a class="aside-link my-1" href="#">
                 <span class="me-2">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -194,21 +203,9 @@
                 </span>
                 المهام
             </a>
-            <a class="aside-link my-1" href="#">
-                <span class="me-2">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M3 15.5V17.3C3 18.42 3 18.98 3.218 19.408C3.40974 19.7843 3.71569 20.0903 4.092 20.282C4.519 20.5 5.079 20.5 6.197 20.5H21M3 15.5V5.5M3 15.5L6.853 12.29L6.857 12.287C7.554 11.706 7.903 11.415 8.282 11.297C8.72913 11.1572 9.21116 11.1788 9.644 11.358C10.011 11.511 10.332 11.832 10.976 12.476L10.982 12.482C11.636 13.136 11.963 13.464 12.336 13.615C12.7774 13.7949 13.2686 13.8112 13.721 13.661C14.104 13.533 14.454 13.227 15.154 12.615L21 7.5"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </span>
-                التحليلات المالية
-            </a>
         </div>
 
         <div class="nav flex-column">
-
-
             <a class="aside-link active my-1" href="#">
                 <span class="me-2">
                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +226,6 @@
                 </span>
                 الشروط والأحكام
             </a>
-
             <a class="aside-link my-1" href="#">
                 <span class="me-2">
                     <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -244,243 +240,207 @@
                 </span>
                 الإعدادات
             </a>
-
-
             <a class="aside-link logout-link my-1" href="#">
                 <span class="me-2 ">
                     <img src="./assets/user.png" class="img-fluid" alt="">
-
                 </span>
-                إسم المحاسب
+                إسم المستخدم
             </a>
         </div>
 
     </aside>
 
     <main id="content" class="content">
-        <section class="index_page">
-            <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
-                <h4 class="page_title main-color">الرئيسية</h4>
-            </div>
+        <div class="chat-page">
+            <div class="d-flex align-items-center justify-content-between  flex-wrap mb-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item fs-4 text-black-50"><a href="#">الرئيسية</a></li>
+                        <li class="breadcrumb-item fs-4 text-black-50"><a href="#">المحادثة</a></li>
+                        <li class="breadcrumb-item   fs-4 page_title main-color" aria-current="page">المجموعات</li>
+                    </ol>
+                </nav>
+                <button data-bs-target="#addGroup" data-bs-toggle="modal" class="main-btn">
+                    <svg width="22" height="21" class="me-2" viewBox="0 0 22 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 0C11.3481 0 11.6819 0.138281 11.9281 0.384423C12.1742 0.630564 12.3125 0.964403 12.3125 1.3125V9.1875H20.1875C20.5356 9.1875 20.8694 9.32578 21.1156 9.57192C21.3617 9.81806 21.5 10.1519 21.5 10.5C21.5 10.8481 21.3617 11.1819 21.1156 11.4281C20.8694 11.6742 20.5356 11.8125 20.1875 11.8125H12.3125V19.6875C12.3125 20.0356 12.1742 20.3694 11.9281 20.6156C11.6819 20.8617 11.3481 21 11 21C10.6519 21 10.3181 20.8617 10.0719 20.6156C9.82578 20.3694 9.6875 20.0356 9.6875 19.6875V11.8125H1.8125C1.4644 11.8125 1.13056 11.6742 0.884423 11.4281C0.638281 11.1819 0.5 10.8481 0.5 10.5C0.5 10.1519 0.638281 9.81806 0.884423 9.57192C1.13056 9.32578 1.4644 9.1875 1.8125 9.1875H9.6875V1.3125C9.6875 0.964403 9.82578 0.630564 10.0719 0.384423C10.3181 0.138281 10.6519 0 11 0Z"
+                            fill="white" />
+                    </svg>
 
-            <div class="">
-                <div class="row row-cols-1  row-cols-md-2 row-cols-lg-4">
-                    <div class="col p-2">
-                        <a href="" class="box h-100 d-flex align-items-center justify-content-center flex-column p-4">
-                            <span class="d-block mb-3">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M34.375 28.4375H30.9166V31.8958H34.375M34.375 21.5208H30.9166V24.9792H34.375M37.8333 35.3542H24V31.8958H27.4583V28.4375H24V24.9792H27.4583V21.5208H24V18.0625H37.8333M20.5416 14.6042H17.0833V11.1458H20.5416M20.5416 21.5208H17.0833V18.0625H20.5416M20.5416 28.4375H17.0833V24.9792H20.5416M20.5416 35.3542H17.0833V31.8958H20.5416M13.625 14.6042H10.1666V11.1458H13.625M13.625 21.5208H10.1666V18.0625H13.625M13.625 28.4375H10.1666V24.9792H13.625M13.625 35.3542H10.1666V31.8958H13.625M24 14.6042V7.6875H6.70831V38.8125H41.2916V14.6042H24Z"
-                                        fill="#003A74" />
-                                </svg>
-                            </span>
-                            <h5 class="text-black-50 mb-0"> 16 منشأة</h5>
-                        </a>
-                    </div>
-                    <div class="col p-2">
-                        <a href="" class="box h-100 d-flex align-items-center justify-content-center flex-column p-4">
-                            <span class="d-block mb-3">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_714_22)">
-                                        <path
-                                            d="M29.1875 21.5208C31.0219 21.5208 32.7812 20.7921 34.0783 19.495C35.3754 18.1979 36.1041 16.4386 36.1041 14.6042C36.1041 12.7698 35.3754 11.0105 34.0783 9.71334C32.7812 8.41622 31.0219 7.6875 29.1875 7.6875M32.6458 26.7083C34.9388 26.7083 37.1379 27.6192 38.7593 29.2406C40.3807 30.862 41.2916 33.0611 41.2916 35.3542C41.2916 36.2714 40.9273 37.151 40.2787 37.7996C39.6302 38.4481 38.7505 38.8125 37.8333 38.8125H35.2396M25.7291 14.6042C25.7291 16.4386 25.0004 18.1979 23.7033 19.495C22.4062 20.7921 20.6469 21.5208 18.8125 21.5208C16.9781 21.5208 15.2188 20.7921 13.9217 19.495C12.6245 18.1979 11.8958 16.4386 11.8958 14.6042C11.8958 12.7698 12.6245 11.0105 13.9217 9.71334C15.2188 8.41622 16.9781 7.6875 18.8125 7.6875C20.6469 7.6875 22.4062 8.41622 23.7033 9.71334C25.0004 11.0105 25.7291 12.7698 25.7291 14.6042ZM22.2708 26.7083H15.3541C13.0611 26.7083 10.862 27.6192 9.24062 29.2406C7.61921 30.862 6.70831 33.0611 6.70831 35.3542C6.70831 36.2714 7.07267 37.151 7.72124 37.7996C8.3698 38.4481 9.24944 38.8125 10.1666 38.8125H27.4583C28.3755 38.8125 29.2552 38.4481 29.9037 37.7996C30.5523 37.151 30.9166 36.2714 30.9166 35.3542C30.9166 33.0611 30.0057 30.862 28.3843 29.2406C26.7629 27.6192 24.5638 26.7083 22.2708 26.7083Z"
-                                            stroke="#003A74" stroke-width="2.59375" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_714_22">
-                                            <rect width="48" height="48" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <h5 class="text-black-50 mb-0"> 24 محاسب</h5>
-                        </a>
-                    </div>
-                    <div class="col p-2">
-                        <a href="" class="box h-100 d-flex align-items-center justify-content-center flex-column p-4">
-                            <span class="d-block mb-3">
-                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M33.3333 8.33203V11.6654M24.9999 8.33203V11.6654M16.6666 8.33203V11.6654M27.4999 31.6654H33.3333M27.4999 19.9987H33.3333M10.8333 21.6654C10.8333 16.1654 10.8333 13.4154 12.5416 11.707C14.2499 9.9987 16.9999 9.9987 22.4999 9.9987H27.4999C33 9.9987 35.75 9.9987 37.4583 11.707C39.1666 13.4154 39.1666 16.1654 39.1666 21.6654V29.9987C39.1666 35.4987 39.1666 38.2487 37.4583 39.957C35.75 41.6654 33 41.6654 27.4999 41.6654H22.4999C16.9999 41.6654 14.2499 41.6654 12.5416 39.957C10.8333 38.2487 10.8333 35.4987 10.8333 29.9987V21.6654Z"
-                                        stroke="#003A74" stroke-width="2.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M16.6666 21.6654C16.6666 21.6654 17.5 21.6654 18.3333 23.332C18.3333 23.332 20.98 19.1654 23.3333 18.332M16.6666 33.332C16.6666 33.332 17.5 33.332 18.3333 34.9987C18.3333 34.9987 20.98 30.832 23.3333 29.9987"
-                                        stroke="#003A74" stroke-width="2.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <h5 class="text-black-50 mb-0"> 8 مهام</h5>
-                        </a>
-                    </div>
-                    <div class="col p-2">
-                        <a href="" class="box h-100 d-flex align-items-center justify-content-center flex-column p-4">
-                            <span class="d-block mb-3">
-                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_714_7)">
-                                        <path
-                                            d="M23.1891 29.1125L20.334 26.2574L18.7797 27.8117L23.1891 32.2211L32.0078 23.4023L30.4535 21.848L23.1891 29.1125ZM8.85859 17.8906H16.575V20.0953H8.85859V17.8906ZM8.85859 12.3789H22.0867V14.5836H8.85859V12.3789ZM8.85859 6.86719H22.0867V9.07188H8.85859V6.86719Z"
-                                            fill="#003A74" />
-                                        <path
-                                            d="M16.575 32.2211H5.55156C4.33568 32.2211 3.34688 31.2323 3.34688 30.0164V3.56016C3.34688 2.34427 4.33568 1.35547 5.55156 1.35547H25.3937C26.6096 1.35547 27.5984 2.34427 27.5984 3.56016V20.0953H25.3937V3.56016H5.55156V30.0164H16.575V32.2211Z"
-                                            fill="#003A74" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_714_7">
-                                            <rect width="34" height="34" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <h5 class="text-black-50 mb-0"> 40 إجمالي الإستشارات</h5>
-                        </a>
-                    </div>
-                </div>
+                    إنشاء مجموعة
+                </button>
             </div>
+            <div class="all_groups_sec">
+                <div class="all_groups_header d-flex align-items-center justify-content-between p-3 mb-4">
+                    <ul class="nav nav-pills m-2" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">الكل</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">المفضلة</button>
+                        </li>
+                    </ul>
 
-            <div class="my-4">
-                <h4 class="page_title text-black-50 p-3 mb-0">المنشآت</h4>
-                <div class="table-responsive p-2">
-                    <table class="table custom_table main-table">
-                        <thead>
-                            <tr>
-                                <th class="text-start px-3">إسم المنشأة</th>
-                                <th class="text-start"></th>
-                            </tr>
-                        </thead>
-                        <tbody class="px-2">
-                            <tr>
-                                <td>
-                                    <div class="account-lable d-flex align-items-center">
-                                        <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                        <p class="mb-0 me-3 text-decoration-underline">المنشأة الأولى</p>
-                                    </div>
-                                </td>
-                                <td class=""><a href="" class="main-btn mx-auto main-control">لوحة التحكم الحالية</a> </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="account-lable d-flex align-items-center">
-                                        <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                        <p class="mb-0 me-3 text-decoration-underline">المنشأة الأولى</p>
-                                    </div>
-                                </td>
-                                <td class=""><a href="" class="main-btn mx-auto">ذهاب للوحة التحكم</a> </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <select class="form-select m-2" aria-label="Default select example">
+                        <option selected>الأحدث</option>
+                        <option value="1">الأقدم</option>
+                    </select>
+
                 </div>
 
-            </div>
 
-            <div class="my-4">
-                <div class="box index_chats">
-                    <h4 class="page_title text-black-50 p-3">المحادثة</h4>
-                    <div class="p-3 all_index_chats">
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
-                        <a href="" class="chat_inbox d-flex justify-content-between p-2">
-                            <div class="d-flex">
-                                <img src="./assets/user.png" class="img-fluid me-3" alt="">
-                                <div>
-                                    <h5 class="main-color">إسم المحاسب </h5>
-                                    <p class="mb-0">كيف حالك</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-black-50 mb-0">اليوم 12:36 مساء</p>
-                            </div>
-                        </a>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                            <div class="col p-2">
+                                <div class="group_card p-4">
+                                    <h4 class="main-color mb-3">اسم المنشأة</h4>
+                                    <p class="text-black-50">2 أعضاء</p>
 
+                                    <a href="" class="main-btn">عرض</a>
+                                </div>
+                            </div>
+                            <div class="col p-2">
+                                <div class="group_card p-4">
+                                    <h4 class="main-color mb-3">اسم المنشأة</h4>
+                                    <p class="text-black-50">2 أعضاء</p>
+
+                                    <a href="" class="main-btn">عرض</a>
+                                </div>
+                            </div>
+                            <div class="col p-2">
+                                <div class="group_card p-4">
+                                    <h4 class="main-color mb-3">اسم المنشأة</h4>
+                                    <p class="text-black-50">2 أعضاء</p>
+
+                                    <a href="" class="main-btn">عرض</a>
+                                </div>
+                            </div>
+                            <div class="col p-2">
+                                <div class="group_card p-4">
+                                    <h4 class="main-color mb-3">اسم المنشأة</h4>
+                                    <p class="text-black-50">2 أعضاء</p>
+
+                                    <a href="" class="main-btn">عرض</a>
+                                </div>
+                            </div>
+                            <div class="col p-2">
+                                <div class="group_card p-4">
+                                    <h4 class="main-color mb-3">اسم المنشأة</h4>
+                                    <p class="text-black-50">2 أعضاء</p>
+
+                                    <a href="" class="main-btn">عرض</a>
+                                </div>
+                            </div>
+                            <div class="col p-2">
+                                <div class="group_card p-4">
+                                    <h4 class="main-color mb-3">اسم المنشأة</h4>
+                                    <p class="text-black-50">2 أعضاء</p>
+
+                                    <a href="" class="main-btn">عرض</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">...</div>
                 </div>
-            </div>
 
-        </section>
+
+
+            </div>
+        </div>
     </main>
+
+
+    <div class="modal fade  main-modal" id="addResponseModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end pb-1 p-4">
+                    <button type="button" class="closeBtn" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 2C8.2 2 2 8.2 2 16C2 23.8 8.2 30 16 30C23.8 30 30 23.8 30 16C30 8.2 23.8 2 16 2ZM21.4 23L16 17.6L10.6 23L9 21.4L14.4 16L9 10.6L10.6 9L16 14.4L21.4 9L23 10.6L17.6 16L23 21.4L21.4 23Z"
+                                fill="#003A74" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <h4 class="main-color mb-4">إضافة رد</h4>
+                    <textarea class="inputform b-4" placeholder="أضف رد هنا ..."></textarea>
+                    <div class="text-center pb-3">
+                        <button class="main-btn mx-auto mt-3 px-5">إضافة</button>
+                        <button class="second-btn mx-auto mt-3 px-5" data-bs-dismiss="modal">إلغاء</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade  main-modal" id="addGroup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end pb-1 p-4">
+                    <button type="button" class="closeBtn" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 2C8.2 2 2 8.2 2 16C2 23.8 8.2 30 16 30C23.8 30 30 23.8 30 16C30 8.2 23.8 2 16 2ZM21.4 23L16 17.6L10.6 23L9 21.4L14.4 16L9 10.6L10.6 9L16 14.4L21.4 9L23 10.6L17.6 16L23 21.4L21.4 23Z"
+                                fill="#003A74" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <h4 class="main-color">انشاء مجموعة</h4>
+                    <div class="my-4">
+                        <div class="input-group flex-nowrap inputform">
+                            <input type="text" class="form-control text-start px-3" placeholder="إسم المنشأة">
+                        </div>
+                    </div>
+                    <div class="my-4 mt-3">
+                        <!-- <div class="input-group flex-nowrap inputform"> -->
+                        <select class="multiple-select" multiple="multiple">
+                            <option value="AL">هدير محمد</option>
+                            <option value="WY">محمود اسماعيل</option>
+                        </select>
+                        <!-- </div> -->
+                    </div>
+                    <div class="text-center pb-3">
+                        <button class="main-btn mx-auto mt-3 px-5">إنشاء</button>
+                        <button class="second-btn mx-auto mt-3 px-5" data-bs-dismiss="modal">إلغاء</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/select2.min.js"></script>
 
 
-
+    <script>
+        $('#addGroup').on('shown.bs.modal', function () {
+            $('.multiple-select').select2({
+                placeholder: "إضافة عضو",
+                width: '100%',
+                dropdownParent: $('#addGroup'),  // This is the key fix
+                language: 'ar',  // For Arabic support
+                dir: 'rtl'      // For RTL support
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <title>قوائم</title>
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+
+
+  <div class="top-nav py-2">
+    <div class="container text-end">
+      <ul>
+        <li class="btn-group mx-3">
+          <a href="">
+            تسجيل/تسجيل دخول
+          </a>
+        </li>
+        <li class="mx-3"><a href="">لوحة التحكم</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo.png" class="img-fluid" alt="">
+      </a>
+      <div class="d-flex d-lg-none ">
+        <div class="lang-link me-3">
+          <a href="">
+            <img src="./assets/lang.png" class="img-fluid" alt="">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link active px-0" class="text-center" href="#">
+              الرئيسية
+            </a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link px-0" class="text-center" href="#">
+              الباقات
+            </a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link px-0" class="text-center" href="#">
+              عن الموقع
+            </a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link px-0" class="text-center" href="#">
+              اتصل بنا
+            </a>
+          </li>
+        </ul>
+        <div class="nav-left  d-lg-flex">
+          <form class="d-flex search-from">
+            <button class="px-3" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg></button>
+            <input class="form-control me-2 ps-0" type="search" placeholder="بحث">
+          </form>
+          <button type="button" class=" d-none d-lg-flex reserve-btn mx-3">
+            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 4H17V3C17 2.73478 16.8946 2.48043 16.7071 2.29289C16.5196 2.10536 16.2652 2 16 2C15.7348 2 15.4804 2.10536 15.2929 2.29289C15.1054 2.48043 15 2.73478 15 3V4H9V3C9 2.73478 8.89464 2.48043 8.70711 2.29289C8.51957 2.10536 8.26522 2 8 2C7.73478 2 7.48043 2.10536 7.29289 2.29289C7.10536 2.48043 7 2.73478 7 3V4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7956 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V7C22 6.20435 21.6839 5.44129 21.1213 4.87868C20.5587 4.31607 19.7956 4 19 4ZM20 19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19V12H20V19ZM20 10H4V7C4 6.73478 4.10536 6.48043 4.29289 6.29289C4.48043 6.10536 4.73478 6 5 6H7V7C7 7.26522 7.10536 7.51957 7.29289 7.70711C7.48043 7.89464 7.73478 8 8 8C8.26522 8 8.51957 7.89464 8.70711 7.70711C8.89464 7.51957 9 7.26522 9 7V6H15V7C15 7.26522 15.1054 7.51957 15.2929 7.70711C15.4804 7.89464 15.7348 8 16 8C16.2652 8 16.5196 7.89464 16.7071 7.70711C16.8946 7.51957 17 7.26522 17 7V6H19C19.2652 6 19.5196 6.10536 19.7071 6.29289C19.8946 6.48043 20 6.73478 20 7V10Z"
+                fill="currentColor" />
+            </svg>
+            حجز موعد
+          </button>
+        </div>
+      </div>
+      <div class="d-none d-lg-block lang-link">
+        <a href="">
+          <img src="./assets/lang.png" class="img-fluid" alt="">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="features_page position-relative py-5">
+    <div class="body-left d-none d-lg-block position-absolute position-absolute">
+      <img src="./assets/body-left.png" alt="">
+    </div>
+    <div class="container position-relative text-center">
+      <div class="section-title mb-4">
+        لماذا تختار قوائم محاسب !
+      </div>
+
+      <div class="text-start">
+
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              اعرض تقاريرك المالية من أي مكان بالعالم
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                بإمكانك الاطلاع على تقاريرك المالية من اي مكان بالعالم بستخدام اي جهاز متصل باالنترنت
+              </h4>
+
+          </div>
+        </div>
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              تقليل التكاليف وخفض الجهد
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                كل أعمالك المحاسبية والمالية في اشتراك شهري واحد!
+              </h4>
+
+          </div>
+        </div>
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              العرض المثالي لتقريرك المالي
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                تقاريرواضحة ومفصلة وسهلة االطالع </h4>
+
+          </div>
+        </div>
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              الربحية المثالية
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                نحدد و نستفيد من التكلفة للمنتج لنحدد افضل سعر بيع لمنتجك
+              </h4>
+
+          </div>
+        </div>
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              الاستشارات المحاسبية
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                بإمكانك حجز اي موعد يناسبك لإستشارةالمحاسب وايجاد حلول مباشرة </h4>
+
+          </div>
+        </div>
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              حفظ وأرشفة ملفاتك
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                عدة منصات وبرامج الكترونية لحفظ وأرشفة جميع ملفاتك لرجوع إليها في اي وقت </h4>
+
+          </div>
+        </div>
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              دائما في الوقت المحدد
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                ستصلك تفاصيل مشروعكالمالية بالوقت المحددس </h4>
+
+          </div>
+        </div>
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              الدقة في العمل دائما
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                خبرات طويلة في مجال المحاسبة تمكننا من عمل تقارير دقيقة ومفصلة </h4>
+
+          </div>
+        </div>
+        <div class="feature_con d-flex align-items-center my-4">
+          <span class="me-3">
+            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_203_364" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="9" width="47"
+                height="30">
+                <path d="M4 27L12 35L33.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="black" stroke-width="8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 27L23 35L44.5 13.5" stroke="white" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </mask>
+              <g mask="url(#mask0_203_364)">
+                <path d="M48 0H0V48H48V0Z" fill="#003A74" />
+              </g>
+            </svg>
+          </span>
+          <div>
+            <h4 class="mb-3 main-color">
+              وسائل التواصل
+              </h3>
+              <h4 class="mb-0 text-black-50">
+                تسمح لك منصتنا التقنية من التواصل الكتابي والسمعي والمرئي مع المحاسب الخاص بك او مع االدارةاو مع فريق
+                عملك </h4>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <div class="section-title mb-4">
+          اشتراكك معنا | القيمة المضافة
+        </div>
+        <div class="feature_sub text-black-50 mx-auto text-center">تبدأ الخدمة الشهرية من <span class="main-color">
+            600</span> ريال</div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col p-3">
+            <div
+              class="text-center  p-4 pt-5 position-relative feature_box d-flex flex-column justify-content-between h-100">
+              <div class="position-absolute service-bg">
+                <img src="./assets/service-bg2.png" class="img-fluid" alt="">
+              </div>
+              <div class="position-relative p-4">
+                <h4 class="mb-0 main-color">اشتراك لبرنامج محاسبي سحابي
+                  <span class="second-color"> مجانا</span>
+                </h4>
+              </div>
+              <div class="d-flex justify-content-end position-relative">
+                <img src="./assets/logo2.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col p-3">
+            <div
+              class="text-center  p-4 pt-5 position-relative feature_box d-flex flex-column justify-content-between h-100">
+              <div class="position-absolute service-bg">
+                <img src="./assets/service-bg2.png" class="img-fluid" alt="">
+              </div>
+              <div class="position-relative p-4">
+                <h4 class="mb-0 main-color">
+                  توفير بما يزيد عن <span class="second-color">%60 </span> من تكاليف الخدمات والبرامج المحاسبية
+                </h4>
+              </div>
+              <div class="d-flex justify-content-end position-relative">
+                <img src="./assets/logo2.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col p-3">
+            <div
+              class="text-center  p-4 pt-5 position-relative feature_box d-flex flex-column justify-content-between h-100">
+              <div class="position-absolute service-bg">
+                <img src="./assets/service-bg2.png" class="img-fluid" alt="">
+              </div>
+              <div class="position-relative p-4">
+                <h4 class="mb-0 main-color">
+                  محاسب سعودي  <span class="second-color">معتمد</span>
+                   وبرنامج محاسبي في
+                  <span class="second-color"> اشتراك شهري واحد</span>
+
+                </h4>
+              </div>
+              <div class="d-flex justify-content-end position-relative">
+                <img src="./assets/logo2.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col p-3">
+            <div
+              class="text-center  p-4 pt-5 position-relative feature_box d-flex flex-column justify-content-between h-100">
+              <div class="position-absolute service-bg">
+                <img src="./assets/service-bg2.png" class="img-fluid" alt="">
+              </div>
+              <div class="position-relative p-4">
+                <h4 class="mb-0 main-color">
+                  ضمان <span class="second-color">ذهبي</span> على جميع اعمالنا وخدماتنا
+
+                </h4>
+              </div>
+              <div class="d-flex justify-content-end position-relative">
+                <img src="./assets/logo2.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <footer class="mt-5">
+    <div class="footer-social position-relative pt-5 pb-3">
+      <div class="left-img-con position-absolute d-none d-lg-block">
+        <img src="./assets/login-bottom.png" class="img-fluid" alt="">
+      </div>
+      <div class="container text-center position-relative">
+        <img src="./assets/footer-logo.png" class="img-fluid mb-5" alt="">
+        <div class="social-media-footer flex-wrap position-relative py-4">
+          <a href="">www.qmohasib.com
+            <svg width="24" height="24" class="ms-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.6 9H20.4M3.6 15H20.4M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12Z"
+                stroke="#003A74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M11.5002 3C9.8155 5.69961 8.92236 8.81787 8.92236 12C8.92236 15.1821 9.8155 18.3004 11.5002 21M12.5002 3C14.1848 5.69961 15.078 8.81787 15.078 12C15.078 15.1821 14.1848 18.3004 12.5002 21"
+                stroke="#003A74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <span class="separator">|</span>
+          <a href="mailto:info@mohasib.com">شركة قوائم المحاسب
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18 3C18.7956 3 19.5587 3.31607 20.1213 3.87868C20.6839 4.44129 21 5.20435 21 6V18C21 18.7956 20.6839 19.5587 20.1213 20.1213C19.5587 20.6839 18.7956 21 18 21H6C5.20435 21 4.44129 20.6839 3.87868 20.1213C3.31607 19.5587 3 18.7956 3 18V6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3H18ZM8 10C7.73478 10 7.48043 10.1054 7.29289 10.2929C7.10536 10.4804 7 10.7348 7 11V16C7 16.2652 7.10536 16.5196 7.29289 16.7071C7.48043 16.8946 7.73478 17 8 17C8.26522 17 8.51957 16.8946 8.70711 16.7071C8.89464 16.5196 9 16.2652 9 16V11C9 10.7348 8.89464 10.4804 8.70711 10.2929C8.51957 10.1054 8.26522 10 8 10ZM11 9C10.7348 9 10.4804 9.10536 10.2929 9.29289C10.1054 9.48043 10 9.73478 10 10V16C10 16.2652 10.1054 16.5196 10.2929 16.7071C10.4804 16.8946 10.7348 17 11 17C11.2652 17 11.5196 16.8946 11.7071 16.7071C11.8946 16.5196 12 16.2652 12 16V12.34C12.305 11.996 12.82 11.592 13.393 11.347C13.726 11.205 14.227 11.147 14.575 11.257C14.6904 11.2863 14.7933 11.3523 14.868 11.445C14.92 11.515 15 11.671 15 12V16C15 16.2652 15.1054 16.5196 15.2929 16.7071C15.4804 16.8946 15.7348 17 16 17C16.2652 17 16.5196 16.8946 16.7071 16.7071C16.8946 16.5196 17 16.2652 17 16V12C17 11.33 16.83 10.734 16.476 10.256C16.1503 9.82256 15.6944 9.50472 15.175 9.349C14.273 9.066 13.274 9.223 12.607 9.509C12.3935 9.60084 12.1854 9.70502 11.984 9.821C11.9421 9.59059 11.8206 9.3822 11.6408 9.23216C11.461 9.08213 11.2342 8.99996 11 9ZM8 7C7.73478 7 7.48043 7.10536 7.29289 7.29289C7.10536 7.48043 7 7.73478 7 8C7 8.26522 7.10536 8.51957 7.29289 8.70711C7.48043 8.89464 7.73478 9 8 9C8.26522 9 8.51957 8.89464 8.70711 8.70711C8.89464 8.51957 9 8.26522 9 8C9 7.73478 8.89464 7.48043 8.70711 7.29289C8.51957 7.10536 8.26522 7 8 7Z"
+                fill="#003A74" />
+            </svg>
+          </a>
+          <span class="separator">|</span>
+          <div class="d-flex">
+            <a href="" class="ms-2">
+              qmohasib_sa
+            </a>
+            <a href="" class="mx-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3 11C3 7.229 3 5.343 4.172 4.172C5.344 3.001 7.229 3 11 3H13C16.771 3 18.657 3 19.828 4.172C20.999 5.344 21 7.229 21 11V13C21 16.771 21 18.657 19.828 19.828C18.656 20.999 16.771 21 13 21H11C7.229 21 5.343 21 4.172 19.828C3.001 18.656 3 16.771 3 13V11Z"
+                  stroke="#003A74" stroke-width="2" />
+                <path
+                  d="M16.5 9C17.3284 9 18 8.32843 18 7.5C18 6.67157 17.3284 6 16.5 6C15.6716 6 15 6.67157 15 7.5C15 8.32843 15.6716 9 16.5 9Z"
+                  fill="#003A74" />
+                <path
+                  d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                  stroke="#003A74" stroke-width="2" />
+              </svg>
+            </a>
+            <a href="" class="mx-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.6002 5.82C15.9167 5.03953 15.5401 4.0374 15.5402 3H12.4502V15.4C12.4268 16.0712 12.1437 16.7071 11.6605 17.1735C11.1773 17.6399 10.5318 17.9004 9.86016 17.9C8.44016 17.9 7.26016 16.74 7.26016 15.3C7.26016 13.58 8.92016 12.29 10.6302 12.82V9.66C7.18016 9.2 4.16016 11.88 4.16016 15.3C4.16016 18.63 6.92016 21 9.85016 21C12.9902 21 15.5402 18.45 15.5402 15.3V9.01C16.7932 9.90985 18.2975 10.3926 19.8402 10.39V7.3C19.8402 7.3 17.9602 7.39 16.6002 5.82Z"
+                  fill="#003A74" />
+              </svg>
+
+            </a>
+            <a href="" class="mx-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM15.6 7.2C15.4949 7.12121 15.3754 7.06388 15.2482 7.03129C15.121 6.99869 14.9886 6.99148 14.8586 7.01005C14.7286 7.02862 14.6035 7.07262 14.4905 7.13953C14.3775 7.20643 14.2788 7.29494 14.2 7.4L12 10.333L9.8 7.4C9.72121 7.29494 9.62249 7.20643 9.50949 7.13953C9.39649 7.07262 9.27142 7.02862 9.14142 7.01005C9.01142 6.99148 8.87903 6.99869 8.75182 7.03129C8.62461 7.06388 8.50506 7.12121 8.4 7.2C8.29494 7.27879 8.20643 7.37751 8.13953 7.49051C8.07262 7.60351 8.02862 7.72858 8.01005 7.85858C7.99148 7.98858 7.99869 8.12097 8.03129 8.24818C8.06388 8.37539 8.12121 8.49494 8.2 8.6L10.75 12L8.2 15.4C8.04087 15.6122 7.97254 15.8789 8.01005 16.1414C8.04756 16.404 8.18783 16.6409 8.4 16.8C8.61217 16.9591 8.87887 17.0275 9.14142 16.99C9.40397 16.9524 9.64087 16.8122 9.8 16.6L12 13.667L14.2 16.6C14.3591 16.8122 14.596 16.9524 14.8586 16.99C15.1211 17.0275 15.3878 16.9591 15.6 16.8C15.8122 16.6409 15.9524 16.404 15.9899 16.1414C16.0275 15.8789 15.9591 15.6122 15.8 15.4L13.25 12L15.8 8.6C15.8788 8.49494 15.9361 8.37539 15.9687 8.24818C16.0013 8.12097 16.0085 7.98858 15.9899 7.85858C15.9714 7.72858 15.9274 7.60351 15.8605 7.49051C15.7936 7.37751 15.7051 7.27879 15.6 7.2Z"
+                  fill="#003A74" />
+              </svg>
+            </a>
+          </div>
+          <a href="https://www.tiktok.com/@qmohasib_sa">
+
+          </a>
+          <span class="separator">|</span>
+          <a href="https://www.instagram.com/@qmohasib_sa"> info@qmohasib.com </a>
+          <span class="separator">|</span>
+          <a href="https://www.linkedin.com/[profile]">0597443111
+            <svg width="24" height="22" class="ms-2" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.5569 13.406L14.1019 13.859C14.1019 13.859 13.0189 14.935 10.0639 11.997C7.10886 9.05898 8.19186 7.98298 8.19186 7.98298L8.47786 7.69698C9.18486 6.99498 9.25186 5.86698 8.63486 5.04298L7.37486 3.35998C6.61086 2.33998 5.13586 2.20498 4.26086 3.07498L2.69086 4.63498C2.25786 5.06698 1.96786 5.62498 2.00286 6.24498C2.09286 7.83198 2.81086 11.245 6.81486 15.227C11.0619 19.449 15.0469 19.617 16.6759 19.465C17.1919 19.417 17.6399 19.155 18.0009 18.795L19.4209 17.383C20.3809 16.43 20.1109 14.795 18.8829 14.128L16.9729 13.089C16.1669 12.652 15.1869 12.78 14.5569 13.406Z"
+                fill="#003A74" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top position-relative pt-5 pb-4">
+      <div class="container">
+        <div class="row  text-lg-start text-center">
+
+          <div class="col-12 col-lg-3">
+            <ul>
+              <li><a href="">الرئيسية</a></li>
+              <li><a href="">من نحن</a></li>
+              <li><a href="">رؤيتنا</a></li>
+              <li><a href="">إشتراكات المحاسبين</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <ul>
+              <li><a href="">خدماتنا</a></li>
+              <li><a href="">لماذا نحن</a></li>
+              <li><a href="">إنضم الى قائمة
+                  المحاسبين القانونيين</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <ul>
+              <li><a href="">المدونة</a></li>
+              <li><a href="">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <ul>
+              <li><a href=""><span class="me-2">
+                    <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M26.3333 2H8.83329C5.15139 2 2.16663 4.98477 2.16663 8.66667V23.6667C2.16663 27.3486 5.15139 30.3333 8.83329 30.3333H26.3333C30.0152 30.3333 33 27.3486 33 23.6667V8.66667C33 4.98477 30.0152 2 26.3333 2Z"
+                        stroke="#003A74" stroke-width="2.4375" />
+                      <path
+                        d="M2.24512 8.81641L14.2535 15.6997C15.2595 16.2843 16.4024 16.5922 17.566 16.5922C18.7295 16.5922 19.8724 16.2843 20.8785 15.6997L32.9201 8.81641"
+                        stroke="#003A74" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span> info@qmohasib.com</a></li>
+              <li><a href=""><span class="me-2">
+                    <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M25.7778 0.332031C26.6324 0.332031 27.4519 0.671514 28.0562 1.2758C28.6605 1.88008 29 2.69967 29 3.55425V26.1098C29 26.9644 28.6605 27.784 28.0562 28.3883C27.4519 28.9925 26.6324 29.332 25.7778 29.332H3.22222C2.36764 29.332 1.54805 28.9925 0.943767 28.3883C0.339483 27.784 0 26.9644 0 26.1098V3.55425C0 2.69967 0.339483 1.88008 0.943767 1.2758C1.54805 0.671514 2.36764 0.332031 3.22222 0.332031H25.7778ZM24.9722 25.3043V16.7654C24.9722 15.3724 24.4189 14.0365 23.4339 13.0515C22.4489 12.0665 21.113 11.5131 19.72 11.5131C18.3506 11.5131 16.7556 12.3509 15.9822 13.6076V11.8193H11.4872V25.3043H15.9822V17.3615C15.9822 16.1209 16.9811 15.1059 18.2217 15.1059C18.8199 15.1059 19.3936 15.3436 19.8166 15.7666C20.2396 16.1896 20.4772 16.7633 20.4772 17.3615V25.3043H24.9722ZM6.25111 9.28981C6.96896 9.28981 7.65742 9.00464 8.16501 8.49705C8.67261 7.98945 8.95778 7.301 8.95778 6.58314C8.95778 5.08481 7.74944 3.86036 6.25111 3.86036C5.52899 3.86036 4.83644 4.14723 4.32582 4.65785C3.8152 5.16847 3.52833 5.86102 3.52833 6.58314C3.52833 8.08148 4.75278 9.28981 6.25111 9.28981ZM8.49056 25.3043V11.8193H4.02778V25.3043H8.49056Z"
+                        fill="#003A74" />
+                    </svg>
+                  </span> شركة قوائم محاسب</a></li>
+              <li><a href=""><span class="me-2">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.625 14.3876C1.625 8.23352 1.625 5.15568 3.53764 3.24467C5.44865 1.33203 8.52649 1.33203 14.6806 1.33203H17.9444C24.0985 1.33203 27.1764 1.33203 29.0874 3.24467C31 5.15568 31 8.23352 31 14.3876V17.6515C31 23.8055 31 26.8834 29.0874 28.7944C27.1764 30.707 24.0985 30.707 17.9444 30.707H14.6806C8.52649 30.707 5.44865 30.707 3.53764 28.7944C1.625 26.8834 1.625 23.8055 1.625 17.6515V14.3876Z"
+                        stroke="#003A74" stroke-width="1.63194" />
+                      <path
+                        d="M23.6563 11.1224C25.0082 11.1224 26.1042 10.0264 26.1042 8.67448C26.1042 7.32253 25.0082 6.22656 23.6563 6.22656C22.3043 6.22656 21.2084 7.32253 21.2084 8.67448C21.2084 10.0264 22.3043 11.1224 23.6563 11.1224Z"
+                        fill="#003A74" />
+                      <path
+                        d="M16.3124 21.7322C19.4669 21.7322 22.0242 19.1749 22.0242 16.0204C22.0242 12.8659 19.4669 10.3086 16.3124 10.3086C13.1578 10.3086 10.6006 12.8659 10.6006 16.0204C10.6006 19.1749 13.1578 21.7322 16.3124 21.7322Z"
+                        stroke="#003A74" stroke-width="1.63194" />
+                    </svg>
+                  </span> @QMOHASIB_SA</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container copy-write text-center py-4">
+      <h5 class="mb-0">جميع الحقوق محفوظة</h5>
+    </div>
+  </footer>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
